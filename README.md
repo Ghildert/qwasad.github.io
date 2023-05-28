@@ -20,11 +20,11 @@
       <p>Hello! this is a test website.</p>
     </section>
 
-    <section>
-      <h2>Contact Information</h2>
-      <p>Email: none</p>
-      <p>Phone: 123-456-7890</p>
-    </section>
+
+Contact Information
+Email: none
+Phone: 123-456-7890
+
   </main>
 
   <footer>
