@@ -6,13 +6,16 @@
 <body>
   <h1>Chance Occurrence Counter</h1>
   
-  <label for="numberofTries">Number of Tries:</label>
-  <input type="number" id="numberofTries" value="100">
+  <label for="tries">Number of Tries:</label>
+  <input type="number" id="tries" value="100">
   
-  <label for="chancePercentage">Chance Percentage:</label>
-  <input type="number" id="chancePercentage" value="0.5">
+  <label for="chance">Chance Percentage:</label>
+  <input type="number" id="chance" value="0.5">
   
-  <button onclick="chanceSimulator()">Run</button>
+  <label for="minsStage">Minutes per stage:</label>
+  <input type="number" id="minsStage" value="10">
+
+  <button onclick="chanceSimulator(tries, chance)">Run</button>
   
   <div id="result"></div>
   
