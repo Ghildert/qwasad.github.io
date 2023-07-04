@@ -1,4 +1,4 @@
-function chanceSimulator(tries, chance) {
+function Simulator(tries, chance) {
     const tries = parseInt(document.getElementById("tries").value);
     const mins = parseInt(document.getElementById("minsStage").value)
     const chance = parseFloat(document.getElementById("chance").value);
@@ -17,11 +17,9 @@ function chanceSimulator(tries, chance) {
       stage: stage,
       outcome: outcome
     };
-
-    
 }
 
-const result = chanceSimulator(tries, chance);
+const result = Simulator(tries, chance);
 const convChance = chance * 100
 const clear = (tries * mins) / 60
 
