@@ -1,8 +1,8 @@
-function Simulator(tries, chance) {
+function runSimulator() {
     const tries = parseInt(document.getElementById("tries").value);
-    const mins = parseInt(document.getElementById("minsStage").value)
+    const mins = parseInt(document.getElementById("minsStage").value);
     const chance = parseFloat(document.getElementById("chance").value);
-
+  
     let stage = 0;
     let outcome = [];
   
@@ -13,15 +13,10 @@ function Simulator(tries, chance) {
       }
     }
   
-    return {
-      stage: stage,
-      outcome: outcome
-    };
-}
-
-const result = Simulator(tries, chance);
-const convChance = chance * 100
-const clear = (tries * mins) / 60
-
-const resultElement = document.getElementById("result");
-resultElement.innerText = `Your chance is: ${convChance}% \n Obtained in: ${result.outcome.join(", ")}. ---That's a total of ${result.stage} stage(s) \n It took ${clear} hours to complete all ${tries} stage(s)`;
+    const convChance = chance * 100;
+    const clear = (tries * mins) / 60;
+  
+    const resultElement = document.getElementById("result");
+    resultElement.innerText = `Your chance is: ${convChance}%\nObtained in: ${outcome.join(", ")}. ---That's a total of ${stage} stage(s).\nIt took ${clear} hours to complete all ${tries} stage(s).`;
+  }
+  
