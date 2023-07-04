@@ -1,7 +1,7 @@
 function chanceSimulator(tries, chance) {
-    const tries = parseInt(document.getElementById("numberofTries").value);
+    const tries = parseInt(document.getElementById("tries").value);
     const mins = parseInt(document.getElementById("minsStage").value)
-    const chance = parseFloat(document.getElementById("chancePercentage").value);
+    const chance = parseFloat(document.getElementById("chance").value);
 
     let stage = 0;
     let outcome = [];
